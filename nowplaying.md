@@ -1,0 +1,181 @@
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <div class=“card”>
+    <a href=“https://apps.apple.com/us/app/pawnbarian/id1510583444?uo=4”><img     src=“https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/dc/dc/5d/dcdc5d7f-14f8-3350-6f1b-78406d42a71d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png” style=“width:100%”><p>Pawnbarian</a></br></br>Jan Wojtecki</div>
+    <a href=“https://apps.apple.com/us/app/westurn-turn-based-showdowns/id1607697991?uo=4”><img src=“https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/97/2d/12/972d1241-1c0f-ea72-6352-611779e73447/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png”><p>Westurn: Turn Based Showdowns</a></br>Free</br>Itamar Ernst
+
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      </div>
+<div class="row">
+  <div class="column"> 
+    <div class="card">
+</div></div>
+<div class="row">
+  <div class="column">
+    <div class="card"><p align="center"><a href="https://apps.apple.com/us/app/blacken-slash/id1604646442?uo=4"><img src="https://is3-ssl.mzstatic.com/image/thumb/Purple112/v4/a6/32/aa/a632aaf4-93f8-8d46-b6a9-4b92352985b4/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></p><p align="center">Blacken Slash</a></br>$4.99</br>Mario Kaiser</div></div>
+<div class="row">
+  <div class="column"> 
+    <div class="card"><p align="center"><a href="https://apps.apple.com/us/app/paragon-pioneers/id1599308482?uo=4"><img src="https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/3f/64/a5/3f64a521-2b68-0df9-dec8-54e7b7117ceb/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></p><p align="center">Paragon Pioneers</a></br>$3.99</br>Tobias Tenbusch</div></div>
+<div class="card"><p align="center"><a href="https://apps.apple.com/us/app/dicey-dungeons/id1368013995?uo=4"><img src="https://is2-ssl.mzstatic.com/image/thumb/Purple112/v4/29/66/4e/29664e04-fecf-f75c-a04a-8192b8c9cda9/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></p><p align="center">Dicey Dungeons</a></br>$4.99</br>Distractionware Limited</div>
+<div class="card"><p align="center"><a href="https://apps.apple.com/us/app/netflix-into-the-breach/id1616542180?uo=4"><img src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/6e/3b/2f/6e3b2f5b-73d1-8c7a-89fa-c34add2297cb/AppIcon-1x_U007emarketing-0-10-0-85-220.png/512x512bb.png"></p><p align="center">NETFLIX Into the Breach</a></br>Free</br>Netflix, Inc.</div>
+<div class="card"><p align="center"><a href="https://apps.apple.com/us/app/league-of-legends-wild-rift/id1480616990?uo=4"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/60/34/9e/60349e8e-d676-19f6-4729-e0f50ce185f5/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></p><p align="center">League of Legends: Wild Rift</a></br>Free</br>Riot Games</div>
+<div class="card"><p align="center"><a href="https://apps.apple.com/us/app/genshin-impact/id1517783697?uo=4"><img src="https://is3-ssl.mzstatic.com/image/thumb/Purple112/v4/37/08/4d/37084d81-091e-a0d6-c34d-55f830214522/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/512x512bb.png"></p><p align="center">Genshin Impact</a></br>Free</br>COGNOSPHERE PTE. LTD.</div>
+  </div>
+  
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Column Cards</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Card 1</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Card 2</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Card 3</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Card 4</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
