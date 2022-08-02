@@ -20,9 +20,10 @@
 			</header>
 
 		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
+			<form id="signup-form" action="https://tinyletter.com/smallscreen" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/smallscreen', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+				<!-- commenting out <input type="email" name="email" id="email" placeholder="Email Address" /> -->
+				<input type="text" name="email" id="tlemail" />
+				<input type="submit" value="Subscribe" />
 			</form>
 
 		<!-- Footer -->
@@ -34,7 +35,7 @@
 					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a>, <a href="https://tinyletter.com>Tiny Letter</a></li>
 				</ul>
 			</footer>
 
