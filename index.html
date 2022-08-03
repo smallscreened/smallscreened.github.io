@@ -21,10 +21,13 @@
 
 		<!-- Signup Form -->
 			<form id="signup-form" action="https://tinyletter.com/smallscreen" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/smallscreen', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-				<!-- commenting out <input type="email" name="email" id="email" placeholder="Email Address" /> -->
-				<input type="text" name="email" id="tlemail" />
+				<input type="text" name="emailaddress" id="tlemail" />
 				<input type="submit" value="Subscribe" />
 			</form>
+			
+			<!-- Testing Another Form -->
+			<form action="http://tinyletter.com/smallscreen" method="post" target="popupwindow" onsubmit="window.open('http://tinyletter.com/smallscreen', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text"  name="emailaddress" value="Email Address" onfocus="if (this.value == 'Masukkan emel anda') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Masukkan emel anda';}" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /></form>
+			
 		<!-- Now Playing: Could become a longer body -->
 		<p><a href="https://tinyletter.com/smallscreen/archive">Issue Archive</a> | <a href="https://smallscreened.github.io/playing">Now Playing</a>
 		<!-- Footer -->
