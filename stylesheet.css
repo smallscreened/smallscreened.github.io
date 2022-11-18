@@ -51,4 +51,8 @@ a.alink:active{
 .grad1 {
   background-color: #020104; /* For browsers that do not support gradients */
   background-image: linear-gradient(0deg, #1C252C, #E1D5D9);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
