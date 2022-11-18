@@ -28,6 +28,7 @@ a.alink{
  border-radius: 0px;
  display: inline-block;
  box-shadow: 7px 7px 0px -2px rgba(88,84,91,0.5);
+ width: 40%;
 }
 
 a.alink:hover{
