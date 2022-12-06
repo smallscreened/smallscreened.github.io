@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Campbell Bird
+N;CHARSET=UTF-8:Bird;Campbell;;;
+GENDER:M
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:gcbird2@gmail.com
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:campbell@smallscreen.info
+ORG;CHARSET=UTF-8:Small Screen
+URL;type=WORK;CHARSET=UTF-8:https://smallscreen.info
+X-SOCIALPROFILE;TYPE=Links:https://smallscreened.github.io/links
+REV:2022-12-06T18:15:09.200Z
+END:VCARD
