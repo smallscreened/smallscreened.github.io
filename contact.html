@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Contact Campbell</title>
+</head>
+<body>
+ <script>
+ (function() {
+  var theForm = document.querySelector('form');
+  theForm.addEventListener('submit', function(e) {
+    theForm.action = 'mailto:' + document.getElementById('ToEmail').value;
+    
+    // just for debuggin
+    alert('The form action: ' + theForm.action);
+    e.preventDefault();
+    e.stopPropagation();
+  });
+}());
+</script>
+ <form method="post" action="now it should have what is value of 1." enctype="text/plain">
+    <input type="Email" name="ToEmail" id="ToEmail" value="" required placeholder="Target Email Address.."/>
+
+  <button type="submit">Submit</button></div>
+ </form>
+
+
+<form method="post" action="javascript:;" onSubmit="this.action='cc:'+document.getElementById('contact').value;" enctype="text/plain" method="get"  action="cc:getElementByName='contact'"
+action="mailto:campbell@smallscreen.info">
+Email <input type="text" name="contact"><br>
+
+<input type="submit" value="Connect">
+</form>
+
+<a href="mailto:campbell@smallscreen.info?subject=Contact Exchange&body=Just hit send on this and we're connected!%0A%0AMy contact info:%0AName: Campbell Bird%0AEmail: campbell@smallscreen.info%0AOther Links: https://smallscreen.info/links%0A%3Ca%20href%3D%22https://smallscreen.info/links%22%3EOther%20Links%3C/a%3E">CONNECT</a>
+
+<a href="https://smallscreen.info/Campbell.vcf">Add to Address Book</a>
+
+  
+</body>
+</html>
