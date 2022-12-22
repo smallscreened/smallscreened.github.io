@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Music 2022</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main-2.css" />
+	</head>
+	<body class="is-preload">
+	
+<style>
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]:checked ~ .remove-check{
+    display: none;
+}
+input[type=checkbox]:checked ~ #player{
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+#player{
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*  ------ Just styles ------ */
+input[type=text]{
+    width: 225px;
+    padding: 12px 14px;
+}
+body{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1;
+    color: #222222;
+}
+.btn{
+    width: auto;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: background-color 0.15s ease-in-out;
+    -moz-transition: background-color 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
+}
+.hovercap {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+.hovercap {
+  visibility: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding-top: 30%;
+}
+.btn:hover .hovercap{
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.wrapper {
+  -ms-flex: 33%;
+  flex: 33%;
+  max-width: 33%;
+  padding: 0;
+  position: relative;
+  }
+.wrapper img {
+  margin-top: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsiveness */
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0;
+}  
+</style>
+<body>
+<div class="row">
+<div class="wrapper"><label for="reveal-player1" class="btn"><div class="btn"><img src="https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/05/05/f3/0505f338-9873-feb4-af7f-27a470405e5f/196589246974.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Beyonce<br>Renaissance</div></div></label>
+<input type="checkbox" id="reveal-player1" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FPLzrMYyHmLhGA9MJNeIMOPrciPVTbnk48M&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+<div class="wrapper"><label for="reveal-player2" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a0/f7/69/a0f769b4-6f8c-4ea7-ee4c-c57650c40114/840200510233_cover.jpg/512x512bb.png" style="width:100%"><div class="hovercap">CFCF<br>memoryland enhanced</div></div></label>
+<input type="checkbox" id="reveal-player2" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FOLAK5uy_nrL8w_8xtRN0WZVBU6QhKS9VKHaFL1FCc&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+</div>
+</body>
+</html>
