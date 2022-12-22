@@ -41,6 +41,7 @@ body {
   flex: 33%;
   max-width: 33%;
   padding: 0;
+  position:relative; /* required for positioning later */
 }
 
 .column img {
@@ -69,15 +70,22 @@ body {
   }
 }
 
+/* Creating an album div as an image wrapper CAN PROBABLY DELETE */
+.album {
+  position: relative; /* required for positioning later */
+}
+ 
+
+
 /* Attempted Text Overlay */
 .hovercap {
   /* dimensions */
   box-sizing: border-box;
   width: 100%;
-  padding 10px;
+  height: 100%;
   /* placement */
   position: absolute;
-  bottom: 0; left:0;
+  top: 0; left:0;
   /* colors */
   background-color: rgba(0,0,0,0.5);
   color: white;
@@ -173,7 +181,7 @@ body {
 <!-- Header -->
 <div class="header"><div class="back-button"><ul class="icons">
 	<li><a href="https://smallscreened.github.io" class="icon solid fa-arrow-left"><span class="label">Back</span></a></li></ul></div></br>
-	<h4>Now Playing</br>Music Test</h4>
+	<h4>Music Test</h4>
 </div>
 
 <!-- Photo Grid -->
