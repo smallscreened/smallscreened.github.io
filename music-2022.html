@@ -12,167 +12,8 @@
 		<link rel="stylesheet" href="assets/css/main-2.css" />
 	</head>
 	<body class="is-preload">
+	
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
-  font-size: 20px;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-  max-width: 33%;
-  padding: 0;
-  position:relative; /* required for positioning later */
-}
-
-.column img {
-  margin-top: 0;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of three columns */
-@media screen and (max-width: 1000px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-    font-size: 32px;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-    font-size: 30px;
-  }
-}
-
-
-/* Attempted Text Overlay */
-.hovercap {
-  /* dimensions */
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  /* placement */
-  position: absolute;
-  top: 0; left:0;
-  /* colors */
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  /* text alignment */
-  text-align: center;
-}
-  
-/* Show/Hide Overlay */
-.hovercap {
-  visibility: none; opacity:0;
-  transition: opacity 0.3s;
-}
-.column:hover .hovercap {
-  visibility: visible; opacity: 1;
-  padding-top: 50%;
-}   
-
-/* Back Button */
-@import "compass/css3";
-
-.back-button {
-	position: absolute;
-  text-indent: -10px;
-  padding: 5px 0 5px 10px;
-  width: 53px;/* modified by label length */
-	overflow: auto;
-}
-.label {
-	display: block;
-  width: auto;
-  line-height: 26px;
-  font-size: 12px;
-  font-weight: 900;
-  font-family: helvetica, sans-serif;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  @include border-radius (4px);
-  background-color: rgba(239,239,239,1);
-  @include background-image (linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%));
-  @include box-shadow(0 1px 3px #cfcfcf);
-  border: 1px solid #bcbcbc;
-  border-left: 0;
-  color: #888; 
-  text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
-	@include single-transition(color,0.1s,linear,0);
-  
-	&:before {
-    float: left;
-    margin-top: 1px;
-    margin-left: -4px;
-    display: block;
-    height: 12px;
-    width: 15px;
-    content: ' ';
-    @include skew(-35deg,0);
-	  background-color: rgba(239,239,239,1);
-    @include background-image (linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%));
-	  border-left: 1px solid #aaa;
-  }
-  &:after {
-    position: relative;
-    margin-top: -13px;
-    margin-bottom: 1px;
-    margin-left: -4px;
-    margin-right: auto;
-    display: block;
-    height: 12px;
-    width: 15px;
-    content: ' ';
-    @include skew(35deg,0);
-	  background-color: rgba(239,239,239,1);
-    @include background-image (linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%));
-	  border-left: 1px solid #aaa;
-    @include box-shadow(-2px 1px 2px rgba(100,100,100,0.1));
-  }
-}
-.label:hover {
-  color: hsl(210, 100%, 40%); 
-}
-.label:active {
-  @include background-image (linear-gradient(top, rgba(230,230,230,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%));
-  @include box-shadow(0 0 1px #cfcfcf,inset 0 1px 2px rgba(0,0,0,0.1), 0 1px 0 rgba(255,255,255,0.7));
-  
-  &:before {
-    @include background-image (linear-gradient(top, rgba(230,230,230,0) 0%,rgba(230,230,230,1) 1%,rgba(240,240,240,1) 100%));
-  }
-  &:after {
-    @include box-shadow(-1px 0 0 rgba(255,255,255,0.7));
-  }
-}
-
-/* Trying to make an onclick reveal */
 input[type=checkbox]{
     display: none;
 }
@@ -180,37 +21,193 @@ input[type=checkbox]:checked ~ .remove-check{
     display: none;
 }
 input[type=checkbox]:checked ~ #player{
-    display: block;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 0;
 }
 #player{
     display: none;
+    
 }
 
+
+
+
+
+
+
+
+
+
+/*  ------ Just styles ------ */
+input[type=text]{
+    width: 225px;
+    padding: 12px 14px;
+}
+body{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1;
+    color: #222222;
+}
+.btn{
+    width: auto;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: background-color 0.15s ease-in-out;
+    -moz-transition: background-color 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
+}
+.hovercap {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+.hovercap {
+  visibility: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding-top: 30%;
+}
+.btn:hover .hovercap{
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.wrapper {
+  -ms-flex: 33%;
+  flex: 33%;
+  max-width: 33%;
+  padding: 0;
+  position: relative;
+  }
+.wrapper img {
+  margin-top: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsiveness */
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0;
+}  
+.row #footer {
+  padding-top: 10px;
+  margin-top: 10px;
+} 
 </style>
 <body>
+<h2 align="center">6 Albums, 6 Singles (2022)</h2>
+<h3 align="center"><p>Click on an image for a player and links, or <a href="https://www.youtube.com/playlist?list=PLTm1tn5YD5gLcVQnhMXMf4Skje8t6zML4">listen to everything in one playlist here.</a></p>
+<p>Albums</p></h3>
+<div class="row">
+<div class="wrapper"><label for="reveal-player1" class="btn"><div class="btn"><img src="https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/05/05/f3/0505f338-9873-feb4-af7f-27a470405e5f/196589246974.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Beyonce<br>Renaissance</div></div></label>
+<input type="checkbox" id="reveal-player1" role="button">
 
-<!-- Header -->
-<div class="header"><div class="back-button"><ul class="icons">
-	<li><a href="https://smallscreened.github.io" class="icon solid fa-arrow-left"><span class="label">Back</span></a></li></ul></div></br>
-	<h4>Music Test</h4>
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FPL6n7xOfvov7Ds1cPywvmgdHMjtHLTcH1O&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+
+<div class="wrapper"><label for="reveal-player2" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a0/f7/69/a0f769b4-6f8c-4ea7-ee4c-c57650c40114/840200510233_cover.jpg/512x512bb.png" style="width:100%"><div class="hovercap">CFCF<br>memoryland enhanced</div></div></label>
+<input type="checkbox" id="reveal-player2" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FOLAK5uy_nrL8w_8xtRN0WZVBU6QhKS9VKHaFL1FCc&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player3" class="btn"><div class="btn"><img src="https://is5-ssl.mzstatic.com/image/thumb/Music112/v4/a6/63/da/a663dab8-3d6e-1b66-d8ec-a26e8d5800ad/22UMGIM15334.rgb.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Vince Staples<br>Ramona Park Broke My Heart</div></div></label>
+<input type="checkbox" id="reveal-player3" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FPLsAk6h4n-dS3Fr-_Da5pFcISLV74M7iFa&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div> 
+    
+<div class="wrapper"><label for="reveal-player4" class="btn"><div class="btn"><img src="https://is2-ssl.mzstatic.com/image/thumb/Music122/v4/f6/7d/00/f67d00ce-6913-31b7-0246-25e96da106b2/1614.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Sudan Archives<br>Natural Brown Prom Queen</div></div></label>
+<input type="checkbox" id="reveal-player4" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FPLS4jAfE9d3aLG3fLemUxiKeKSPkd_ilrx&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>  
+    
+<div class="wrapper"><label for="reveal-player5" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/7c/81/6d/7c816d0a-0745-350a-365e-ff4089af7e92/190296409165.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Charli XCX<br>Crash</div></div></label>
+<input type="checkbox" id="reveal-player5" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FPLxA687tYuMWjQHGktIzWNI_8A-VpYfBvJ&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player6" class="btn"><div class="btn"><img src="https://is3-ssl.mzstatic.com/image/thumb/Music112/v4/55/fa/bb/55fabbc4-0bd5-3f5f-fc41-868f83af1501/5400863086077.png/512x512bb.png" style="width:100%"><div class="hovercap">Alvvays<br>Blue Rev</div></div></label>
+<input type="checkbox" id="reveal-player6" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FPLDlpFJ-xc105oOD2Y9Gsegd1PQbtQ-L-g&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>     
 </div>
+<p></p>
+<p></p>
+<h3 align="center">Singles</h3>
+<div class="row">
+<div class="wrapper"><label for="reveal-player7" class="btn"><div class="btn"><img src="https://is2-ssl.mzstatic.com/image/thumb/Music116/v4/f9/cc/8a/f9cc8a17-4fe2-ca3b-59c1-26454691ee20/196626586209.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Totally Enormous Extinct Dinosaurs<br>Never Seen You Dance</div></div></label>
+<input type="checkbox" id="reveal-player7" role="button">
 
-<!-- Photo Grid -->
-<div class="row"><div class="column"><input type="checkbox" id="columnControl" /><label class="column" for="columnControl"><img src="https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/05/05/f3/0505f338-9873-feb4-af7f-27a470405e5f/196589246974.jpg/512x512bb.png"><div class="hovercap"><a href="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FPLzrMYyHmLhGA9MJNeIMOPrciPVTbnk48M&theme=dark" target="_blank">Renaissance</br>Beyonce</a></div></label></div>
-<div class="column"><a href="https://apps.apple.com/us/app/vampire-survivors/id6444525702?uo=4"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/df/d4/07/dfd4073a-bbd2-ad28-4a64-835a5c166e04/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></div>
-<div class="column"><a href="https://apps.apple.com/us/app/afterplace/id1539778232?uo=4"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/d9/cd/63/d9cd63d8-057c-f17c-e894-d77d88b09935/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"></div>
-<div class="column"><a href="https://apps.apple.com/us/app/finding-paradise/id1619867109?uo=4"><img src="https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/ed/ba/b6/edbab664-3089-d0af-d60b-7e985a162664/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></div>
-<div class="column"><a href="https://apps.apple.com/us/app/motorsport-manager-mobile-3/id1346580540?uo=4"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/75/cb/42/75cb4290-ba65-270a-f3b2-beeb83b7fb96/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></div>
-<div class="column"><a href="https://apps.apple.com/us/app/opus-echo-of-starsong/id1604771334?uo=4"><img src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/e1/68/1b/e1681b22-1e6f-6683-6bfe-d6a86d490970/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></div>
-<div class="column"><a href="https://apps.apple.com/us/app/dysmantle/id1403738209?uo=4"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/9e/da/1e/9eda1e5b-249b-ae9c-a61d-a3b143187e89/AppIcon-0-0-1x_U007emarketing-0-0-0-4-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></div>
-<div class="column"><a href="https://apps.apple.com/us/app/monster-train/id1577392165?uo=4"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple112/v4/97/ab/da/97abda90-89e9-4c4f-f934-ad7140b388b4/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"></div>
-<div class="column"><a href="https://apps.apple.com/us/app/genshin-impact/id1517783697?uo=4"><img src="https://is3-ssl.mzstatic.com/image/thumb/Purple112/v4/37/08/4d/37084d81-091e-a0d6-c34d-55f830214522/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/512x512bb.png"></div>
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FgI8X0JglfeE&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player8" class="btn"><div class="btn"><img src="https://is4-ssl.mzstatic.com/image/thumb/Music116/v4/76/4c/9f/764c9f94-4471-8860-f61f-d53e6fe5b7b1/198002897749.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Lander & Adriaan<br>Biskolom Aloofkis</div></div></label>
+<input type="checkbox" id="reveal-player8" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FvD6wMsTeapQ&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div> 
+    
+<div class="wrapper"><label for="reveal-player9" class="btn"><div class="btn"><img src="https://is3-ssl.mzstatic.com/image/thumb/Music112/v4/61/75/72/61757278-d6b6-1497-66e8-7d7ba70a805b/artwork.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Former Hero<br>deepfake</div></div></label>
+<input type="checkbox" id="reveal-player9" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FtnyGMvXMHy4&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player10" class="btn"><div class="btn"><img src="https://is4-ssl.mzstatic.com/image/thumb/Music122/v4/16/8b/3b/168b3b28-931b-6c90-6b54-e2a48b840670/5056167176244_1.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Disclosure & Raye<br>Waterfall</div></div></label>
+<input type="checkbox" id="reveal-player10" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2Fc1zN-sEUc68&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player11" class="btn"><div class="btn"><img src="https://is4-ssl.mzstatic.com/image/thumb/Music126/v4/58/c3/c0/58c3c0c5-4fa8-d85b-9047-1ccfb7eea59a/5060944574192.png/512x512bb.png" style="width:100%"><div class="hovercap">Peggy Gou<br>I Go (DJ Koze Remix)</div></div></label>
+<input type="checkbox" id="reveal-player11" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FxlBmu4xD7go&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player12" class="btn"><div class="btn"><img src="https://is3-ssl.mzstatic.com/image/thumb/Music112/v4/28/88/a0/2888a04f-4619-4c1d-7738-4c4b9b697b3e/192152050269.png/512x512bb.png" style="width:100%"><div class="hovercap">Braxe + Falcon<br>Step By Step (feat. Panda Bear)</div></div></label>
+<input type="checkbox" id="reveal-player12" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FpqKjFj6YoWM&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
 
 		<!-- Footer -->
-			
-			<footer id="footer">
+			<div class="row"><footer id="footer">
 				<ul class="icons">
-					<li><a rel="me" href="https://elekk.xyz/@campbell" class="icon brands fa-mastodon"><span class="label">Mastodon</span></a></li>
 					<li><a href="https://twitter.com/smallscreened" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="https://ko-fi.com/campbellbird" class="icon solid fa-mug-hot"><span class="label">Ko-Fi</span></a></li>
 					<li><a href="https://github.com/smallscreened" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -220,9 +217,5 @@ input[type=checkbox]:checked ~ #player{
 					<li>&copy; namestolen.</br>Credits: <a href="http://html5up.net">HTML5 UP</a>, <a href="https://tinyletter.com">Tiny Letter</a></li>
 				</ul>
 			</footer></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
