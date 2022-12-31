@@ -1,4 +1,9 @@
 <html>
+	<style>
+	.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+</style>
 	<head>
 		<title>Small Screen Live</title>
 		<meta charset="utf-8" />
@@ -6,5 +11,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 
-<p align="center"><iframe title="Mobile Games Streaming" src="https://video.hardlimit.com/videos/embed/ab69b48f-6f94-4ca6-ac0a-541bc9a7403a" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="100%" height="315" frameborder="0"></iframe></p>
+<p align="center"><div class="video-container"><iframe title="Mobile Games Streaming" src="https://video.hardlimit.com/videos/embed/ab69b48f-6f94-4ca6-ac0a-541bc9a7403a" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="100%" height="100%" frameborder="0"></iframe></div></p>
 <p align="center"><a href="https://video.hardlimit.com/c/namestolen/videos">View Archives</a> | <a href="https://elekk.xyz/@campbell">Follow me</a>
+
+</html>
