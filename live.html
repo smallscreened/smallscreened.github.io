@@ -1,6 +1,30 @@
 <html>
 	<style>
-.video {
+	
+.video-wrap { 
+    position: relative; 
+    margin: 0 auto 20px;
+    max-width: 700px;
+} 
+
+.video-wrap:before {
+    content: '';
+    display: block;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video-wrap iframe, 
+.video-wrap object, 
+.video-wrap embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}	
+	
+.video-old {
   aspect-ratio: 16 / 9;
   width: 100%;
   position: relative;
@@ -14,7 +38,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 
-<p align="center"><iframe class="video" title="Mobile Games Streaming" src="https://video.hardlimit.com/videos/embed/ab69b48f-6f94-4ca6-ac0a-541bc9a7403a" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" frameborder="0"></iframe></p>
+<p align="center"><div class="video-wrap"><iframe data-lazyloaded="1" src="about:blank" data-src="https://video.hardlimit.com/videos/embed/ab69b48f-6f94-4ca6-ac0a-541bc9a7403a" width="560" height="315" frameborder="0"></iframe><noscript><iframe title="Mobile Games Streaming" src="https://video.hardlimit.com/videos/embed/ab69b48f-6f94-4ca6-ac0a-541bc9a7403a" width="560" height="315" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" frameborder="0"></iframe></noscript></div></p>
+<div class="video-wrap"><iframe data-lazyloaded="1" src="about:blank" data-src="https://www.youtube.com/embed/wH-by1ydBTM" width="560" height="315" frameborder="0"></iframe><noscript><iframe src="https://www.youtube.com/embed/wH-by1ydBTM" width="560" height="315" frameborder="0"></iframe></noscript></div>
 <p align="center"><a href="https://video.hardlimit.com/c/namestolen/videos">View Archives</a> | <a href="https://elekk.xyz/@campbell">Follow me</a>
 
 </html>
