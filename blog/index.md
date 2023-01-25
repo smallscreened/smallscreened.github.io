@@ -6,7 +6,7 @@ I hate to say it, but it's unfortunately true. All this month, I have been track
 
 The results speak for themselves.
 
-![A log of runs that shows me getting faster each run](/images/blog/runninglog.jpeg “My Running Log”)
+![A log of runs that shows me getting faster each run](../images/blog/runninglog.jpeg “My Running Log”)
 
 As a bonus (and actually the reason I tried it to begin with), iSmoothRun is very flexible and can sync with basically any running/fitness services you can think of. The image above is from [SmashRun](https://smashrun.com/) and all I have to do it tap a button in iSmoothRun to sync a very detailed log over there.
 
