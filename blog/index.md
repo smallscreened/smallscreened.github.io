@@ -1,6 +1,7 @@
-### Small Screen Blog
-Latest:
+# Updates
+
+## Latest:
 
 
-Other Posts:
+## Other Posts:
 
