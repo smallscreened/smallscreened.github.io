@@ -1,6 +1,3 @@
-# Updates
-
-## Latest:
 ### Streaming games natively from iOS devices
 For as long as I've been playing and covering games on iOS (about a decade but who's counting), I've been on the hunt for a reliable and easy way to stream games directly from my devices. Despite an ocean of software on the App Store claiming to do just this, I only recently came across an app that really ticks every box for me while being completely free and dead simple to use: (PRISM Live)[https://apps.apple.com/us/app/prism-live-streaming-app/id1319056339].
 
@@ -11,10 +8,3 @@ PRISM Live is better than a lot of other software I tested primarily because of 
 I will say another thing that makes this setup so easy is the flexibility of Peertube itself. When setting up live streaming, there's actually a setting that lets you choose whether you want to do a live stream link that will only be used once or is a recurring link. Using a recurring stream setup is what allows PRISM Live to be able to broadcast using the same RTMP settings over and over again without having to fuss with the app at all. There's also a bunch of other things I've grown to appreciate about Peertube since using this setup but maybe that's for another post.
 
 I can't believe how long it took me to find this elegant solution to a simple problem, but I'm glad I did. My previous "good enough" solution used an app that was trying to be its own social media platform, complete with some garbage NFT hooks and I'm so glad to be done with it. I can now record basically unlimited amounts of gameplay footage for archival, clipping, and other sharing purposes and it's fast, easy, and free.
-
-Permalink: [https://smallscreen.info/blog/posts/2023/02/14/Streaming-games-natively-from-iOS-devices](https://smallscreen.info/blog/posts/2023/02/14/Streaming-games-natively-from-iOS-devices)
-
-## Other Posts:
-[I run like a gamer](https://smallscreen.info/blog/posts/2023/01/25/I-run-like-a-gamer)
-
-[Streaming games natively from iOS devices](https://smallscreen.info/blog/posts/2023/02/14/Streaming-games-natively-from-iOS-devices)
