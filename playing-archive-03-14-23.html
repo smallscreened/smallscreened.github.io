@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Now Playing</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main-2.css" />
+	</head>
+	<body class="is-preload">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 3px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    font-size: 32px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    font-size: 30px;
+  }
+}
+
+/* Back Button */
+@import "compass/css3";
+
+.back-button {
+	position: absolute;
+  text-indent: -10px;
+  padding: 5px 0 5px 10px;
+  width: 53px;/* modified by label length */
+	overflow: auto;
+}
+.label {
+	display: block;
+  width: auto;
+  line-height: 26px;
+  font-size: 12px;
+  font-weight: 900;
+  font-family: helvetica, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  @include border-radius (4px);
+  background-color: rgba(239,239,239,1);
+  @include background-image (linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%));
+  @include box-shadow(0 1px 3px #cfcfcf);
+  border: 1px solid #bcbcbc;
+  border-left: 0;
+  color: #888; 
+  text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
+	@include single-transition(color,0.1s,linear,0);
+  
+	&:before {
+    float: left;
+    margin-top: 1px;
+    margin-left: -4px;
+    display: block;
+    height: 12px;
+    width: 15px;
+    content: ' ';
+    @include skew(-35deg,0);
+	  background-color: rgba(239,239,239,1);
+    @include background-image (linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%));
+	  border-left: 1px solid #aaa;
+  }
+  &:after {
+    position: relative;
+    margin-top: -13px;
+    margin-bottom: 1px;
+    margin-left: -4px;
+    margin-right: auto;
+    display: block;
+    height: 12px;
+    width: 15px;
+    content: ' ';
+    @include skew(35deg,0);
+	  background-color: rgba(239,239,239,1);
+    @include background-image (linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%));
+	  border-left: 1px solid #aaa;
+    @include box-shadow(-2px 1px 2px rgba(100,100,100,0.1));
+  }
+}
+.label:hover {
+  color: hsl(210, 100%, 40%); 
+}
+.label:active {
+  @include background-image (linear-gradient(top, rgba(230,230,230,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%));
+  @include box-shadow(0 0 1px #cfcfcf,inset 0 1px 2px rgba(0,0,0,0.1), 0 1px 0 rgba(255,255,255,0.7));
+  
+  &:before {
+    @include background-image (linear-gradient(top, rgba(230,230,230,0) 0%,rgba(230,230,230,1) 1%,rgba(240,240,240,1) 100%));
+  }
+  &:after {
+    @include box-shadow(-1px 0 0 rgba(255,255,255,0.7));
+  }
+}
+
+</style>
+<body>
+
+<!-- Header -->
+<div class="header"><div class="back-button"><ul class="icons">
+	<li><a href="https://smallscreened.github.io" class="icon solid fa-arrow-left"><span class="label">Back</span></a></li></ul></div></br>
+	<h4>Now Playing</br>(Updated Feb 17, 2023)</h4>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"><div class="column"><a href="https://apps.apple.com/us/app/kontra-multiplayer-fps/id1660215198?uo=4"><img src="https://is2-ssl.mzstatic.com/image/thumb/Purple126/v4/63/ae/cf/63aecfc0-cf7e-c73c-aaeb-3d207d6781e9/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"></p><p>Kontra - Multiplayer FPS</a></br>Free</br>Oleg Sapovsky</div>
+<div class="column"><a href="https://apps.apple.com/us/app/gomorrah/id1582843093?uo=4"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple126/v4/80/0d/67/800d67e5-a5bf-a4b8-cfcb-e718643dd36a/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></p><p>Gomorrah</a></br>$2.99</br>34BigThings srl</div>
+<div class="column"><a href="https://apps.apple.com/us/app/happy-game/id1490100895?uo=4"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple126/v4/b7/8a/72/b78a72d3-8ac5-62e0-9f1e-c55944dc259a/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"></p><p>Happy Game :)</a></br>$5.99</br>Amanita Design s.r.o.</div>
+<div class="column"><a href="https://apps.apple.com/us/app/myst-mobile/id6444813759?uo=4"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/de/ab/e1/deabe128-df3d-3ae8-a96d-e48f0dcc19a9/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></p><p>Myst Mobile</a></br>Free</br>Cyan Worlds</div>
+<div class="column"><a href="https://apps.apple.com/us/app/roccos-island-pocket-edition/id6443620400?uo=4"><img src="https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/76/5c/4f/765c4f12-20f0-1abb-1aac-56c6b85bda54/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></p><p>Rocco's Island: Pocket Edition</a></br>Free</br>Cogoo Inc.</div>
+<div class="column"><a href="https://apps.apple.com/us/app/haak/id1336793944?uo=4"><img src="https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/cb/c8/1c/cbc81c1b-eb02-0802-2065-6b240c81ee19/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></p><p>HAAK</a></br>$6.99</br>ZhiXiong Huang</div>
+<div class="column"><a href="https://apps.apple.com/us/app/dungeon-of-the-endless-apogee/id1526466468?uo=4"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple114/v4/e4/3d/f8/e43df895-dc78-e269-7929-818d251b1506/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"></p><p>Dungeon of the Endless: Apogee</a></br>$7.99</br>Playdigious</div>
+<div class="column"><a href="https://apps.apple.com/us/app/motorsport-manager-mobile-3/id1346580540?uo=4"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/75/cb/42/75cb4290-ba65-270a-f3b2-beeb83b7fb96/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"></p><p>Motorsport Manager Mobile 3</a></br>$5.99</br>Playsport Games Ltd</div>
+<div class="column"><a href="https://apps.apple.com/us/app/monster-train/id1577392165?uo=4"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple112/v4/97/ab/da/97abda90-89e9-4c4f-f934-ad7140b388b4/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"></p><p>Monster Train</a></br>$9.99</br>Good Shepherd Entertainment</div>
+<div class="column"><a href="https://apps.apple.com/us/app/genshin-impact/id1517783697?uo=4"><img src="https://is3-ssl.mzstatic.com/image/thumb/Purple112/v4/37/08/4d/37084d81-091e-a0d6-c34d-55f830214522/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/512x512bb.png"></p><p>Genshin Impact</a></br>Free</br>COGNOSPHERE PTE. LTD.</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a rel="me" href="https://elekk.xyz/@campbell" class="icon brands fa-mastodon"><span class="label">Mastodon</span></a></li>
+					<li> <a href="https://smallscreen.info/live" class="icon solid fa-video"><span class="label">Live Stream</span></a></li>
+					<li><a href="https://ko-fi.com/campbellbird" class="icon solid fa-mug-hot"><span class="label">Ko-Fi</span></a></li>
+					<li><a href=mailto:campbell@smallscreen.info class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; namestolen.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a>, <a href="https://tinyletter.com">Tiny Letter</a></li>
+				</ul>
+			</footer> </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
