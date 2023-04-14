@@ -1,6 +1,3 @@
-# Updates
-
-## Latest:
 ### Music Recap: Winter 2023
 So I've been proceeding forward with my plan to [add everything I listen to this year into a single playlist](https://elekk.xyz/@campbell/109609703169030560). I am a YouTube Premium patron, so that's where I'm housing everything, and since you're here in this space reading this you can [take a peek at it and listen yourself](https://youtube.com/playlist?list=PLTm1tn5YD5gLaxGIMNSTAGI8-6SUl4BYn). I'm going to just keep adding things here, but just know as of this writing the list is the first 1,041 items.
 
@@ -9,13 +6,3 @@ At the same time, YouTube Music also is continuing to do a poor impression of Sp
 ![Screenshots from my YouTube Music Winter Recap](/images/blog/winter23music.jpeg) My YouTube Music Winter Recap
 
 I did indeed get back into Nine Inch Nails in a big way through they winter. I've always liked them, but every time I revisit them their music really grows on me. Otherwise a lot of my listening was dance music tuned for running as I'm currently training for a race (and need my running playlist on point), [Caroline Polachek's latest album](https://album.link/y/PLSyWCtnp4AuodCGqesPd4wW4wlHPLQMNi) which I find to be very enjoyable pop music, and a fair amount of Elderbrook because I went to see him live last month. Probably the most brow-raising part of this analysis is the playlists because I don't usually listen to music via playlists in YouTube Music so I think it grabbed the only three things I clicked on. [Extrawelt is some really great stuff](https://album.link/y/PL8A2CFF335FD4273A), though.
-
-
-Permalink: [https://smallscreen.info/blog/posts/2023/04/14/Music-Recap:-Winter-2023](https://smallscreen.info/blog/posts/2023/04/14/Music-Recap:-Winter-2023)
-
-## Other Posts:
-[I run like a gamer](https://smallscreen.info/blog/posts/2023/01/25/I-run-like-a-gamer)
-
-[Streaming games natively from iOS devices](https://smallscreen.info/blog/posts/2023/02/14/Streaming-games-natively-from-iOS-devices)
-
-[Music Recap: Winter 2023](https://smallscreen.info/blog/posts/2023/04/14/Music-Recap:-Winter-2023)
