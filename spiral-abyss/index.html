@@ -18,207 +18,22 @@
 	}
 }
 
-/* An attempt to get rid of the Lightbox with a zoom feature */
-<style>
-* {
-  box-sizing: border-box;
-}
-​
-.zoom {
-  padding: 50px;
-  transition: transform .2s;
-  margin: 0 auto;
-}
-​
-.zoom:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
-}
-</style>
 
-/* Lightbox */
-a. lightbox img {
-	height:100%;
-	border: 3px solid white;
-	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-	margin: 94px 20px 20px 20px;
+/* New Attempt */
+.click-zoom input[type=checkbox] {
+  display: none
 }
 
-/* Styles the lightbox, removes it from sight and adds the fade-in transition */
-
-.lightbox-target {
-position: fixed;
-top: -100%;
-width: 100%;
-background: rgba(0,0,0,.7);
-width: 100%;
-opacity: 0;
--webkit-transition: opacity .5s ease-in-out;
--moz-transition: opacity .5s ease-in-out;
--o-transition: opacity .5s ease-in-out;
-transition: opacity .5s ease-in-out;
-overflow: hidden;
- 
+.click-zoom img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in
 }
 
-/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(2);
+  cursor: zoom-out
+}		
 
-.lightbox-target img {
-margin: auto;
-position: absolute;
-top: 0;
-left:0;
-right:0;
-bottom: 0;
-max-height: 0%;
-max-width: 0%;
-border: 3px solid white;
-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-box-sizing: border-box;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
-  
-}
-
-/* Styles the close link, adds the slide down transition */
-
-a.lightbox-close {
-display: block;
-width:50px;
-height:50px;
-box-sizing: border-box;
-background: white;
-color: black;
-text-decoration: none;
-position: relative;
-top: -80px;
-right: 0;
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:before {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(45deg);
--moz-transform:rotate(45deg);
--o-transform:rotate(45deg);
-transform:rotate(45deg);
-}
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
-a.lightbox-close:after {
-content: "";
-display: block;
-height: 30px;
-width: 1px;
-background: black;
-position: absolute;
-left: 26px;
-top:10px;
--webkit-transform:rotate(-45deg);
--moz-transform:rotate(-45deg);
--o-transform:rotate(-45deg);
-transform:rotate(-45deg);
-}
-
-/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-
-.lightbox-target:target {
-opacity: 1;
-top: 0;
-bottom: 0;
-  overflow:scroll;
-}
-
-.lightbox-target:target img {
-max-height: 100%;
-max-width: 100%;
-}
-
-.lightbox-target:target a.lightbox-close {
-top: 0;
-}			
-
-img {
-	transition:transform 0.25s ease;
-}	
-
-.img:hover{
-  -webkit-transform:scale(1.5);
-  transform:scale(1.5);
-}
-
-.video {
-	aspect-ratio: 16 / 9;
-	max-width: 100%;
-	height: auto;
-}	
-
-.fade-in {
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-}
 </style>
 	<head>
 		<title>Spiral Abyss Tracker</title>
@@ -248,41 +63,36 @@ img {
 	
 	</head>
 <body>
-	<iframe class="video" width="100%" src="https://video.hardlimit.com/videos/embed/aad3b6ad-0343-4bc8-a8f3-f7fb9dd48dde?warningTitle=0" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe><h4 align="center">Floor 11 and 12</h4>
+	<iframe class="video" width="100%" height="500px" src="https://video.hardlimit.com/videos/embed/aad3b6ad-0343-4bc8-a8f3-f7fb9dd48dde?warningTitle=0" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe><h4 align="center">Floor 11 and 12</h4>
 	
 <p align="center"><a href="https://video.hardlimit.com/c/namestolen/videos">View Archives</a> | <a href="https://elekk.xyz/@campbell">Follow me</a>
 <div class="fade in" align="center" style="font-family: 'VT323', monospace;font-size: 30px;color: rgb(64,64,64);">SPIRAL ABYSS VER. 4.4 CYCLE 1<p style="font-size:14px;color: rgb(64,64,64);">
 <div class="column">
 	<h3 align="center">Team 1</h3>
-	<div class="zoom"><img src="team_images/photo-1.png" width="100%"></div>
-	<div class="zoom"><img src="team_images/photo-2.png" width="100%"></div>
-	<div class="zoom"><img src="team_images/photo-3.png" width="100%"></div>
-	<div class="zoom"><img src="team_images/photo-4.png" width="100%"></div>
-	<a class="lightbox" href="#photo-5"><img src="team_images/photo-1.png" width="100%"></a>
-	<a class="lightbox" href="#photo-6"><img src="team_images/photo-2.png" width="100%"></a>
-	<a class="lightbox" href="#photo-7"><img src="team_images/photo-3.png" width="100%"></a>
-	<a class="lightbox" href="#photo-8"><img src="team_images/photo-4.png" width="100%"></a></div>
+	<div class="click-zoom"><label><input type="checkbox">
+	<img src="team_images/photo-1.png" width="100%"></label></div>
+	<div class="click-zoom"><label><input type="checkbox">
+	<img src="team_images/photo-2.png" width="100%"></label></div>
+	<div class="click-zoom"><label><input type="checkbox">
+	<img src="team_images/photo-3.png" width="100%"></label></div>
+	<div class="click-zoom"><label><input type="checkbox">
+	<img src="team_images/photo-4.png" width="100%"></label></div>
+	</div>
 	<div class="column">
 	<h3 align="center">Team 2</h3>
-	<div class="zoom"><img src="team_images/photo-5.png" width="100%"></div>
-	<div class="zoom"><img src="team_images/photo-6.png" width="100%"></div>
-	<div class="zoom"><img src="team_images/photo-7.png" width="100%"></div>
-	<div class="zoom"><img src="team_images/photo-8.png" width="100%"></div>
-	<a class="lightbox" href="#photo"><img src="team_images/photo-5.png" width="100%"></a>
-	<a class="lightbox" href="#photo-2"><img src="team_images/photo-6.png" width="100%"></a>
-	<a class="lightbox" href="#photo-3"><img src="team_images/photo-7.png" width="100%"></a>
-	<a class="lightbox" href="#photo-4"><img src="team_images/photo-8.png" width="100%"></a></div>
+	<div class="click-zoom"><label><input type="checkbox">
+	<img src="team_images/photo-5.png" width="100%"></label></div>
+	<div class="click-zoom"><label><input type="checkbox">
+	<img src="team_images/photo-6.png" width="100%"></label></div>
+	<div class="click-zoom"><label><input type="checkbox">
+	<img src="team_images/photo-7.png" width="100%"></label></div>
+	<div class="click-zoom"><label><input type="checkbox">
+	<img src="team_images/photo-8.png" width="100%"></label></div>
+	</div>
 </div>
-<img width="100%" src="team_images/photo-9.png">
+<div class="click-zoom"><label><input type="checkbox">
+	<img src="team_images/photo-9.png" width="100%"></label></div>
 <p><br><br>Comments: <br><br>This cycle of abyss wasn't so much hard as it was annoying. Both the mechanical worm and the Wenut both just spend inordinate amounts of time being unhittable, which was the cause for most of my retries. There was also some grouping challenges I had with my Nilou team, but 1) I could correct those through my own actions and 2) grouping tends to be the only true challenge of running a Nilou team. This variant on the bountiful bloom comp is probably my favorite as it takes advantage of basically the only real way Candace can contribute meaningfully to teams, and Lyney continues to be my favorite Fontaine character. Hoping next go around my Gaming and Xianyun will be strong enough to take on the abyss.<br><br><br></p>
-<div class="lightbox-target" id="photo"><img src="team_images/photo-5.png" width="75%"><a class="lightbox-close" href></a></div>
-<div class="lightbox-target" id="photo-2"><img src="team_images/photo-6.png" width="75%"><a class="lightbox-close" href></a></div>
-<div class="lightbox-target" id="photo-3"><img src="team_images/photo-7.png" width="75%"><a class="lightbox-close" href></a></div>
-<div class="lightbox-target" id="photo-4"><img src="team_images/photo-8.png" width="75%"><a class="lightbox-close" href></a></div>
-<div class="lightbox-target" id="photo-5"><img src="team_images/photo-1.png" width="75%"><a class="lightbox-close" href></a></div>
-<div class="lightbox-target" id="photo-6"><img src="team_images/photo-2.png" width="75%"><a class="lightbox-close" href></a></div>
-<div class="lightbox-target" id="photo-7"><img src="team_images/photo-3.png" width="75%"><a class="lightbox-close" href></a></div>
-<div class="lightbox-target" id="photo-8"><img src="team_images/photo-4.png" width="75%"><a class="lightbox-close" href></a></div>
 
 <!-- Footer -->
 			<footer id="footer" style="position:relative;">
