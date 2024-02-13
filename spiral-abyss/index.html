@@ -18,6 +18,25 @@
 	}
 }
 
+/* An attempt to get rid of the Lightbox with a zoom feature */
+<style>
+* {
+  box-sizing: border-box;
+}
+​
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+​
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+</style>
+
 /* Lightbox */
 a. lightbox img {
 	height:100%;
@@ -235,12 +254,20 @@ img {
 <div class="fade in" align="center" style="font-family: 'VT323', monospace;font-size: 30px;color: rgb(64,64,64);">SPIRAL ABYSS VER. 4.4 CYCLE 1<p style="font-size:14px;color: rgb(64,64,64);">
 <div class="column">
 	<h3 align="center">Team 1</h3>
+	<div class="zoom"><img src="team_images/photo-1.png" width="100%"></div>
+	<div class="zoom"><img src="team_images/photo-2.png" width="100%"></div>
+	<div class="zoom"><img src="team_images/photo-3.png" width="100%"></div>
+	<div class="zoom"><img src="team_images/photo-4.png" width="100%"></div>
 	<a class="lightbox" href="#photo-5"><img src="team_images/photo-1.png" width="100%"></a>
 	<a class="lightbox" href="#photo-6"><img src="team_images/photo-2.png" width="100%"></a>
 	<a class="lightbox" href="#photo-7"><img src="team_images/photo-3.png" width="100%"></a>
 	<a class="lightbox" href="#photo-8"><img src="team_images/photo-4.png" width="100%"></a></div>
 	<div class="column">
 	<h3 align="center">Team 2</h3>
+	<div class="zoom"><img src="team_images/photo-5.png" width="100%"></div>
+	<div class="zoom"><img src="team_images/photo-6.png" width="100%"></div>
+	<div class="zoom"><img src="team_images/photo-7.png" width="100%"></div>
+	<div class="zoom"><img src="team_images/photo-8.png" width="100%"></div>
 	<a class="lightbox" href="#photo"><img src="team_images/photo-5.png" width="100%"></a>
 	<a class="lightbox" href="#photo-2"><img src="team_images/photo-6.png" width="100%"></a>
 	<a class="lightbox" href="#photo-3"><img src="team_images/photo-7.png" width="100%"></a>
