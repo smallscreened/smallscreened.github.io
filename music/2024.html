@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Music 2024</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main-2.css" />
+	</head>
+	<body class="is-preload">
+	
+<style>
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]:checked ~ .remove-check{
+    display: none;
+}
+input[type=checkbox]:checked ~ #player{
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+#player{
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*  ------ Just styles ------ */
+input[type=text]{
+    width: 225px;
+    padding: 12px 14px;
+}
+body{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1;
+    color: #222222;
+}
+.btn{
+    width: auto;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: background-color 0.15s ease-in-out;
+    -moz-transition: background-color 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
+}
+.hovercap {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+.hovercap {
+  visibility: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding-top: 30%;
+}
+.btn:hover .hovercap{
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.wrapper {
+  -ms-flex: 33%;
+  flex: 33%;
+  max-width: 33%;
+  padding: 0;
+  position: relative;
+  }
+.wrapper img {
+  margin-top: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsiveness */
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0;
+}  
+.row #footer {
+  padding-top: 10px;
+  margin-top: 10px;
+} 
+</style>
+<body>
+<h2 align="center">6 Albums, 6 Singles (2024)</h2>
+<h3 align="center"><p>Click on an image for a player and links, or <a href="https://youtube.com/playlist?list=PLTm1tn5YD5gI5wnmG7B82Cdh9yEtGxXPP&si=sPKn9KHZjeMMbj7b">listen to everything in one playlist here.</a></p>
+<p>Albums</p></h3>
+<div class="row">
+<div class="wrapper"><label for="reveal-player1" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2d/19/2c/2d192c3f-6656-0a49-22d9-52b50cca010f/198704058578_Cover.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Kelly Lee Owens<br>Dreamstate</div></div></label>
+<input type="checkbox" id="reveal-player1" role="button">
+    
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FOLAK5uy_lj1bLzFigD2jyTtrcBxvihllErfgxiEzw&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+
+<div class="wrapper"><label for="reveal-player2" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/a5/3f/9da53f24-8e91-bac8-588a-71fbc033ca45/5054429190212.png/512x512bb.png" style="width:100%"><div class="hovercap">Floating Points<br>Cascade</div></div></label>
+<input type="checkbox" id="reveal-player2" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FOLAK5uy_nTbYSrLIQExuq3jfihga-LrugULhpiQGU&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player3" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/37/02/a5/3702a50f-1e46-b541-2932-c3108e72ceb7/23UM1IM58229.rgb.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Tierra Whack<br>World Wide Whack</div></div></label>
+<input type="checkbox" id="reveal-player3" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FOLAK5uy_lvSfQxk9B4g8KQd3ij2LrcWMFt0NAB7u8&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div> 
+    
+<div class="wrapper"><label for="reveal-player4" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/41/e2/b7/41e2b75e-6863-c90a-a442-b6378a2a3f5c/5056614707335.png/512x512bb.png" style="width:100%"><div class="hovercap">Vegyn<br>The Road to Hell is Paved With Good Intentions</div></div></label>
+<input type="checkbox" id="reveal-player4" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FOLAK5uy_lzrI_wdr44rFk-Y8xQqIN2T-DxPaRoAio&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>  
+    
+<div class="wrapper"><label for="reveal-player5" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cf/0b/2b/cf0b2bae-d4c1-49ce-de5c-b7c3fcd9e4cd/075679643087.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Charli XCX<br>Brat and it's the same but there's three more songs so it's not</div></div></label>
+<input type="checkbox" id="reveal-player5" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FOLAK5uy_kIUJp68dohXllvrOIqZ5L6t0k71tEW4SM&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player6" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3b/3b/e6/3b3be6fd-10ee-df21-ab28-3c0472b92b60/198588002001.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Midland<br>Fragments of Us</div></div></label>
+<input type="checkbox" id="reveal-player6" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fy%2FOLAK5uy_l-uwFWCXC5tiP8uKyPw9Y2Esb4cu4R8OQ&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>     
+</div>
+<p></p>
+<p></p>
+<h3 align="center">Singles</h3>
+<div class="row">
+<div class="wrapper"><label for="reveal-player7" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/22/da/ab/22daabb2-6d75-58a9-27ab-16cbbb56981d/191400061071.png/512x512bb.png" style="width:100%"><div class="hovercap">Helado Negro<br>Wish You Could Be Here</div></div></label>
+<input type="checkbox" id="reveal-player7" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FmqInpVZRxq4&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player8" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/45/92/5a/45925a10-14a7-3e8e-6cc5-7c6af2742290/191404141779.png/512x512bb.png" style="width:100%"><div class="hovercap">Joy Orbison<br>flight fm</div></div></label>
+<input type="checkbox" id="reveal-player8" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FrsFDOGwkSv8&theme=dark" frameborder="0" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div> 
+    
+<div class="wrapper"><label for="reveal-player9" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/aa/97/10/aa97109b-24ec-3653-1c20-cec1e7049eea/5056467379260_cover.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Gerry Read<br>Not Quite There Yet</div></div></label>
+<input type="checkbox" id="reveal-player9" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FVQgdFSHk5wg&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player10" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/77/30/5b/77305bcd-83d3-e949-0070-476c47eca4d3/24SYMIM09383.rgb.jpg/512x512bb.png" style="width:100%"><div class="hovercap">Effy & Mall Grab<br>iluv</div></div></label>
+<input type="checkbox" id="reveal-player10" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FlXH0Q_E8DNE&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player11" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d9/88/5d/d9885d3d-8756-43ce-2a89-b974b94b7f37/198846768502.jpg/512x512bb.png" style="width:100%"><div class="hovercap">orbit<br>hands</div></div></label>
+<input type="checkbox" id="reveal-player11" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FfLz8AHrHGlI&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+    
+<div class="wrapper"><label for="reveal-player12" class="btn"><div class="btn"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2d/4b/8b/2d4b8b01-d65f-b926-117d-51526878461d/889030035677.png/512x512bb.png" style="width:100%"><div class="hovercap">Jamie xx ft. The Avalances<br>All You Children</div></div></label>
+<input type="checkbox" id="reveal-player12" role="button">
+
+    <div id="player" style="position:absolute;height:100%;width:100%;"><iframe style="position:absolute;top:-100%;" width="100%" height="100%" align="center" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fy%2FdILtgyQEXRA&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe></div></div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a rel="me" href="https://elekk.xyz/@campbell" class="icon brands fa-mastodon"><span class="label">Mastodon</span></a></li>
+					<li><a href="https://twitter.com/smallscreened" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://ko-fi.com/campbellbird" class="icon solid fa-mug-hot"><span class="label">Ko-Fi</span></a></li>
+					<li><a href="https://github.com/smallscreened" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href=mailto:campbell@smallscreen.info class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; namestolen.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a>, <a href="https://tinyletter.com">Tiny Letter</a></li>
+				</ul>
+			</footer>
+</body>
+</html>
