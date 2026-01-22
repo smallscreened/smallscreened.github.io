@@ -11,10 +11,14 @@
             "id": "5eaf8a0972b5972a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "index"
             }
           }
         ]
@@ -181,9 +185,9 @@
   },
   "active": "5eaf8a0972b5972a",
   "lastOpenFiles": [
-    "index.md",
     "hello-world.md",
     "about.md",
+    "index.md",
     "Welcome.md",
     "index.html"
   ]
