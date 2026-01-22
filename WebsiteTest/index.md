@@ -21,7 +21,7 @@ home page in markdown syntax...
 
 ## Archive
 
-* yyyy/mm/dd: [Post Title](md file)  { #tag1, #tag2 }
+* yyyy/mm/dd: [Hello World](Hello World.md)  { #test, #tag2 }
 * yyyy/mm/dd: [Post Title](md file)  { #tag1, #tag2 }
 ...
 * yyyy/mm/dd: [Post Title](md file)  { #tag1, #tag2 }
