@@ -12,7 +12,16 @@ menu       :
 --------------------------------------------------------------------------
 
 <style comment="additional style">
-......
+#header { {{css-header}}  }
+#left-panel  { width:{{nav-width}} }
+#right-panel { left: calc({{nav-width}} + 20px) }
+h1 { border-bottom:1px dotted grey }
+.nav-post a  { color: teal }
+.nav-tag  a  { color: #06c }
+.nav-month a { color: grey }
+.post-date   { font-size:12px; font-weight:400; }
+.post-title  { font-size:16px; color:#333 }
+.post-tags   { left-margin:20px; padding:4px; font-size:10px; color:green; font-weight:400 }
 </style>
 
 <div id="md-post">
